@@ -59,3 +59,9 @@ i {
   font-weight: bold;
   font-size: 15px;
 }
+
+.main-content {
+  width: 80vw;
+  margin-left: 20vw;
+  margin-bottom: 100px;
+}
