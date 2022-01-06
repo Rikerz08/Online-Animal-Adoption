@@ -19,7 +19,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  width: 20vw;
+  width: 25vw;
   height: 100vh;
   background-color: #f0e9d6;
   float: left;
@@ -38,11 +38,23 @@ a {
 }
 
 .sidemenu ul li {
-  list-style: none;
-  padding: 15px;
+  padding-left: 10px;
 }
 .sidemenu ul li:hover {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sidemenu ul li div {
+  width: 100%;
+}
+
+.sidemenu ul li div .animal {
+  border-radius: 10px;
+  width: 50%;
+}
+
+.sidemenu ul li div .heart {
+  width: 10%;
 }
 
 i {
@@ -61,7 +73,7 @@ i {
 }
 
 .main-content {
-  width: 80vw;
-  margin-left: 20vw;
+  width: 75vw;
+  margin-left: 25vw;
   margin-bottom: 100px;
 }
