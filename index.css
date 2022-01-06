@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Source Serif Pro", serif;
+  background-color: #f5f5f5;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Averia Serif Libre", cursive;
+}
+
+.sidemenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20vw;
+  height: 100vh;
+  background-color: #f0e9d6;
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidemenu h1 {
+  font-family: "Averia Serif Libre", cursive;
+  color: black;
+  font-size: 37px;
+  text-align: center;
+  line-height: 90px;
+  border-bottom: 2px solid black;
+  margin-bottom: 37px;
+}
+
+.sidemenu ul li {
+  list-style: none;
+  padding: 15px;
+}
+.sidemenu ul li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+i {
+  margin-right: 8px;
+}
+
+.sidemenu .extras {
+  align-self: center;
+  margin-top: 500px;
+}
+
+.sidemenu .extras p {
+  font-family: "Averia Serif Libre", cursive;
+  font-weight: bold;
+  font-size: 15px;
+}
