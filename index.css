@@ -84,16 +84,13 @@ body {
 span {
   font-family: "Averia Serif Libre", cursive;
   font-size: 25px;
+  color: black;
 }
 
 .sidemenu ul li div .heart {
   width: 9%;
   font-weight: 600;
 }
-
-/* i {
-  margin-right: 8px;
-} */
 
 .sidemenu .extras {
   align-self: center;
@@ -329,10 +326,26 @@ span {
   margin-bottom: 10px;
 }
 .card__unit-stats .stat-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 12px;
 }
+
+.one-third .stat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.one-third .stat-value {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
 .card__unit-stats .no-border {
   border-right: none;
 }
@@ -356,13 +369,16 @@ span {
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 35px;
+  height: 30px;
 }
 .card-heart {
-  display: flex;
-  justify-content: center;
-  align-content: center;
   height: 30px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.card-heart:hover {
+  transform: scale(1.2);
 }
 .stat-value-cost {
   display: flex;
