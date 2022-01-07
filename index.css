@@ -28,12 +28,12 @@ body {
   /* height: 100%; */
 }
 
-a {
+/* a {
   color: black;
   text-decoration: none;
   font-size: 20px;
   font-family: "Averia Serif Libre", cursive;
-}
+} */
 
 .sidemenu {
   position: fixed;
@@ -54,20 +54,46 @@ a {
   text-align: center;
   line-height: 90px;
   border-bottom: 2px solid black;
-  margin-bottom: 37px;
+  /* margin-bottom: 37px;  */
 }
 
 .sidemenu ul li {
-  list-style: none;
-  padding: 15px;
+  /* margin: 37px 0; */
+  border-bottom: 2px solid grey;
 }
+
 .sidemenu ul li:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-i {
-  margin-right: 8px;
+.sidemenu ul li div {
+  width: 100%;
+  padding: 37px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
+
+.sidemenu ul li div .animal {
+  border-radius: 10px;
+  width: 30%;
+  border: 3px solid black;
+}
+
+span {
+  font-family: "Averia Serif Libre", cursive;
+  font-size: 25px;
+}
+
+.sidemenu ul li div .heart {
+  width: 9%;
+  font-weight: 600;
+}
+
+/* i {
+  margin-right: 8px;
+} */
 
 .sidemenu .extras {
   align-self: center;
