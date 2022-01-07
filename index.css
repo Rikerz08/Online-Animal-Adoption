@@ -365,12 +365,20 @@ span {
   right: 100px;
   z-index: 999;
 }
-.card-x {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  height: 30px;
+
+.x-arrow {
+  position: relative;
+  bottom: -650px;
+  height: 40px;
+  z-index: 1;
+  transition: 0.3s ease;
+  cursor: pointer;
 }
+
+.x-arrow:hover {
+  transform: scale(1.2);
+}
+
 .card-heart {
   height: 30px;
   transition: 0.2s ease;
