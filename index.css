@@ -404,6 +404,7 @@ span {
   height: 805px;
   overflow: hidden;
   overflow-y: scroll;
+  display: flex;
 }
 .scroll-object {
   /* color: wheat; */
@@ -421,4 +422,9 @@ span {
   margin-left: 30px;
   width: 410px;
   box-shadow: -10px 15px 40px 10px black;
+}
+
+#adopt {
+  position: relative;
+  left: -255px;
 }

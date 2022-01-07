@@ -1,25 +1,3 @@
-// (function () {
-//   var slideContainer = $(".slide-container");
-
-//   slideContainer.slick();
-
-//   $(".card__image img").hide();
-//   $(".slick-active").find(".card img").fadeIn(200);
-
-//   // // On before slide change
-//   slideContainer.on(
-//     "beforeChange",
-//     function (event, slick, currentSlide, nextSlide) {
-//       $(".slick-active").find(".card img").fadeOut(1000);
-//     }
-//   );
-
-//   // On after slide change
-//   slideContainer.on("afterChange", function (event, slick, currentSlide) {
-//     $(".slick-active").find(".card img").fadeIn(200);
-//   });
-// })();
-
 $(".slide-container").slick({
   rtl: true,
   prevArrow:
@@ -42,9 +20,8 @@ const happyButton = document.getElementById("happy-btn");
 const scarButton = document.getElementById("scar-btn");
 const simbaButton = document.getElementById("simba-btn");
 const ul = document.getElementById("pet-list");
-const removeButton = document.getElementsByClassName("removeBtn");
-
-removeButton.onclick;
+const removeBtn = document.getElementById("clear-all");
+const adoptBtn = document.getElementById("adopt");
 
 function createPetList(name, image) {
   const displayName = document.getElementById(name);
@@ -58,15 +35,11 @@ function createPetList(name, image) {
   const heartImg = document.createElement("img");
   heartImg.className = "heart";
   heartImg.setAttribute("src", "images/heart.png");
-  const removeButton = document.createElement("button");
-  removeButton.innerHTML = "Remove";
-  removeButton.className = "removeBtn";
 
   li.appendChild(div);
   div.appendChild(animalImg);
   div.appendChild(span);
   div.appendChild(heartImg);
-  div.appendChild(removeButton);
 
   return li;
 }
@@ -110,4 +83,13 @@ scarButton.onclick = function () {
 simbaButton.onclick = function () {
   const li = createPetList("simba-name", "simba-img");
   ul.appendChild(li);
+};
+
+removeBtn.onclick = function () {
+  ul.innerHTML = "";
+};
+
+adoptBtn.onclick = function () {
+  ul.innerHTML = "";
+  alert("Thank you for adopting these wonderful pets! :)");
 };
