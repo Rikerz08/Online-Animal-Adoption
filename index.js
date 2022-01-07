@@ -1,29 +1,31 @@
-(function () {
-  var slideContainer = $(".slide-container");
-
-  slideContainer.slick();
-
-  $(".card__image img").hide();
-  $(".slick-active").find(".card img").fadeIn(200);
-
-  // // On before slide change
-  slideContainer.on(
-    "beforeChange",
-    function (event, slick, currentSlide, nextSlide) {
-      $(".slick-active").find(".card img").fadeOut(1000);
-    }
-  );
-
-  // On after slide change
-  slideContainer.on("afterChange", function (event, slick, currentSlide) {
-    $(".slick-active").find(".card img").fadeIn(200);
-  });
-})();
-
 // (function () {
-//   $('.slide-container').slick({
-//     rtl: true
+//   var slideContainer = $(".slide-container");
+
+//   slideContainer.slick();
+
+//   $(".card__image img").hide();
+//   $(".slick-active").find(".card img").fadeIn(200);
+
+//   // // On before slide change
+//   slideContainer.on(
+//     "beforeChange",
+//     function (event, slick, currentSlide, nextSlide) {
+//       $(".slick-active").find(".card img").fadeOut(1000);
+//     }
+//   );
+
+//   // On after slide change
+//   slideContainer.on("afterChange", function (event, slick, currentSlide) {
+//     $(".slick-active").find(".card img").fadeIn(200);
 //   });
+// })();
+
+$(".slide-container").slick({
+  rtl: true,
+  prevArrow:
+    '<span class="priv-arrow"><img src="transparent img/x.png" alt="" class = "x-arrow"></span>',
+  nextArrow: null,
+});
 
 // need a function for creating li, div, animal-img, name-span, heart image
 //  we'll have 10 variables for the 10 heart buttons for animals then we
