@@ -270,6 +270,7 @@ span {
   margin-bottom: 5px;
 }
 .card__unit-description {
+  color: black;
   padding: 20px;
   margin-bottom: 10px;
 }
