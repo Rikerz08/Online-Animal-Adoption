@@ -396,3 +396,29 @@ span {
   margin-top: 13px;
   font-weight: lighter;
 }
+.scroll-bg {
+  width: 300px;
+}
+.scroll-div {
+  width: 400px;
+  height: 805px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.scroll-object {
+  /* color: wheat; */
+  font-family: cursive;
+  font-size: 15px;
+  padding: 20px;
+}
+.sidemenu {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 15px;
+  height: 915px;
+  border-radius: 15px;
+  margin-left: 30px;
+  width: 410px;
+  box-shadow: -10px 15px 40px 10px black;
+}
